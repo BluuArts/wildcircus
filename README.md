@@ -18,7 +18,7 @@ Au delà du challenge technique, il s’agit aussi de faire preuve de créativit
 
 ## Critères de validation du challenge :
 - La page d'accueil du site contient le programme d’un spectacle avec la liste des performances
-- Il y a une page dédiée à chaque performance (fais appel à ta créativité !).
+- Il y a une page dédiée à chaque performance
 - Chaque page contient au moins :
   - le titre de la performance
   - les noms des protagoniste (humains, animaux ou machines)
