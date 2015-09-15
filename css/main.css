@@ -1,22 +1,107 @@
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@font-face{
+    font-family:'Circus';
+    src:url('../fonts/Carnevalee-Freakshow.ttf') format('truetype');
+}
+html, body {
+    height: 100%;
+}
+body {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(221,193,99,.5);
+    background: url('../img/circus-bg.jpg') center top;
+}
+.wcs-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(221,193,99,.5);
+    box-shadow: inset 0 0 100px rgba(221,193,99,.5);
+}
+.wcs-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.wcs-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .wcs-wrapper-inner {
+        vertical-align: middle;
+    }
+}
+/* Padding for spacing */
+.wcs-inner {
+  padding: 0;
+  margin:0;
+  margin-top:30px;
+  padding-bottom:15px;
+}
+/*
+ * Header
+ */
+.wcs-head-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:"Circus", sans-serif;
+    font-size: 1000%;
+}
+.wcs-head-brand:before {
+    content: "* ";
+}
+.wcs-head-nav {
+  padding: 0;
+  margin:0;
+}
+.wcs-head-nav > li {
+    display: inline-block;
+}
+.wcs-head-nav > li + li {
+    margin-left: 20px;
+}
+.wcs-head-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    color: rgba(255,255,255,.75);
+    border-bottom: 2px solid transparent;
+    font-size: 320%;
+}
+.wcs-head-nav > li > a:hover, .wcs-head-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255,255,255,.25);
+}
+.wcs-head-nav > .active > a, .wcs-head-nav > .active > a:hover, .wcs-head-nav > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+/*
+ * Affix and center
+ */
+@media (min-width: 768px) {
+    .wcs-head {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .wcs-head-brand {
+        float: left;
+    }
+    .wcs-head-nav {
+        float: right;
+    }
+}
+@media (min-width: 992px) {
+    .wcs-head, .wcs-container {
+        width: 700px;
+    }
+}
