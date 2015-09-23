@@ -32,7 +32,18 @@ body {
 .wcs-container {
     margin-right: auto;
     margin-left: 3%;
-    max-width:37%
+    float:left;
+    width:37%
+}
+.wcs-body {
+    margin-left: auto;
+    margin-right: 3%;
+    float:right;
+    width:45%;
+}
+.wcs-body * {
+    font-family:sans-serif;
+    text-align:left;
 }
 .wcs-background-revert {
     background-color: #ddc163;
@@ -104,6 +115,13 @@ body {
 .wcs-head-mouseicon .mouseicon-mouse, .wcs-head-mouseicon .mouseicon {
     margin-left: auto;
     margin-right:auto;
+}
+img.media-object {
+    max-width:128px;
+    max-height:128px;
+}
+.media a, .media a:hover, .media a:visited, .media a:focus {
+    color:#fff;
 }
 /*
  * Affix and center
