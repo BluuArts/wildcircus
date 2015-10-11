@@ -20,6 +20,10 @@ body {
     min-height:100%;
     border-bottom:5px solid #fff;
 }
+.header-spacer {
+    margin-top:45px;
+    margin-bottom:60px
+}
 img {
     max-width:100%;
 }
